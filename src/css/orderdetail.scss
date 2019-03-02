@@ -1,0 +1,221 @@
+@import './config.scss';
+.order-detail-wrapper{
+    width:100%;
+    min-height:100%;
+    background-color: $border-color;
+    .order-back{
+        display:flex;
+        height:50px;
+        // width:50px;
+        // padding:10px;
+        // margin-left:20px;
+        // margin-right:20px;
+        background-color: $them-color;
+        justify-content: flex-start;
+        .back{
+            width:50px;
+            padding:17px 17px 17px 5px;
+            .van-icon{
+                font-size:16px;
+                color:#fff;
+            }
+        }
+        .title{
+            flex:1;
+            line-height: 50px;
+            color:#fff;
+            font-size:16px;
+            font-weight: bold;
+        }
+    }
+    .order-id{
+        display: flex;
+        margin-left:5px;
+        margin-right: 5px;
+        height:50px;
+        line-height: 50px;
+        justify-content: space-between;
+        background-color: #fff;
+        .id{
+            padding-left:10px;
+            font-size:14px;
+        }
+        .status{
+            padding-right:10px;
+        }
+    }
+    .order-address{
+        display: flex;
+        margin-left:5px;
+        margin-right: 5px;
+        margin-top:10px;
+        justify-content: flex-start;
+        background-color: #fff;
+        .address-icon{
+            padding:29px 10px 10px 10px;
+            .van-icon{
+                font-size:16px;
+                color:$them-color;
+            }
+        }
+        .address-phone{
+            padding:10px;
+            .address{
+                font-size: 16px;
+            }
+            .phone{
+                padding-top: 10px;
+            }
+        }
+    }
+    .order-list{
+        margin-left:5px;
+        margin-right: 5px;
+        margin-top:10px;
+        background-color: #fff;
+        .store-info{
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            .store-name{
+                font-size:16px;
+                .van-icon{
+                    font-size:16px;
+                    color:$them-color;
+                    padding-right:20px;
+                }
+            }
+            .store-phone{
+                font-size:16px;
+                .van-icon{
+                    font-size:16px;
+                    color:$them-color;
+                    padding-left:10px;
+                }
+            }
+        }
+        .arrive-time{
+            padding:10px 10px 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            .time{
+                font-size: 16px;
+            }
+            
+        }
+        .list-wrapper{
+            padding: 10px;
+            // li:last-child {
+            //     margin-bottom: 49px;
+            // }
+            .list{
+                display: flex;
+                margin-top:10px;
+                .list-img{
+                    width:90px;
+                    height:90px;
+                    img{
+                        height: 100%;
+                        width:100%;
+                    }
+                }
+                .list-desc{
+                    padding-left:10px;
+                    width:calc(100% - 90px);
+                    .product-name{
+                        font-size:16px;
+                        // padding-top:10px;
+                    }
+                    .product-desc{
+                        padding-top:10px;
+                        color: $them-fontColor1
+                    }
+                    .product-num-price{
+                        padding-top:10px;
+                        display: flex;
+                        color: $them-fontColor1;
+                        justify-content: space-between;
+                        .product-price{
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .order-place{
+        margin-left:5px;
+        margin-right: 5px;
+        margin-top:10px;
+        background-color: #fff;
+        margin-bottom:49px;
+        .place-order-time{
+            display: flex;
+            padding:10px;
+            justify-content: space-between;
+            .detail-time{
+                color:$them-fontColor1
+            }
+        }
+        .product-sum{
+            display: flex;
+            padding:10px;
+            justify-content: space-between;
+            .detail-money{
+                color:$them-fontColor1
+            }
+        }
+    }
+    .apply{
+        height:50px;
+        width:100%;
+        position: fixed;
+        bottom:0px;
+        background-color:#fff;
+        z-index:11;
+        display: flex;
+        justify-content: space-between;
+        .remain-time{
+            line-height: 50px;
+            padding-left:15px;
+        }
+        // padding :10px 15px;
+        .pay-cancel{
+            display: flex;
+            justify-content: space-between;
+            // line-height: 50px;
+            padding:10px;
+            .van-button--info{
+               margin-right:10px;
+            }
+            .van-button--primary{
+                border:1px solid $them-color;
+                .van-button__text{
+                    color:$them-color;
+                }
+            }
+            // .button{
+            //     border-radius: 40px;
+            //     height: 30px;
+            //     padding:5px 10px;
+                
+            // }
+            // .cancel{
+            //     border:1px solid $them-fontColor1;
+            //     margin-top:10px;
+            //     margin-right:10px;
+            //     color:$them-fontColor1
+            // }
+            // .pay{
+            //     border:1px solid $them-color;
+            //     margin-top:10px;
+            //     margin-right:10px;
+            //     color:$them-color;
+            // }
+            // .disabled{
+            //     border:1px solid $them-fontColor1;
+            //     color:$them-fontColor1;
+            // }
+        }
+    }
+}

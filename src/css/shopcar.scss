@@ -1,0 +1,83 @@
+@import './config.scss';
+.shopcar-wrapper{
+    width:100%;
+    .operate-wrapper{
+        display: flex;
+        padding:10px 10px;
+        height:40px;
+        background-color: #eceff1;
+        line-height: 20px;
+        .back{
+            width:40px;
+            padding-top:2px;
+        }
+        .selected{
+            flex:1;
+            font-size:14px;
+        }
+        .clear{
+            width:40px;
+        }
+    }
+    .order-list{
+        li{
+            display: flex;
+            border-bottom: 1px solid $border-color;
+            margin-left:10px;
+            padding:10px 10px 10px 0px;
+            justify-content:space-between;
+            height:60px;
+            line-height: 40px;
+            // text-align: center;
+            .card-name{
+                flex:1;
+                font-size:14px;
+            }
+            .card-price{
+                width:80px;
+                color:$tagColor;
+                font-weight: bold;
+            }
+            .card-num{
+                width:100px;
+                span{
+                    display: inline-block;
+                    // padding-right: 10px;
+                    font-size:16px;
+                    margin-right: 8px;
+                }
+                .muns{
+                    text-align: center;
+                    width:15px;
+                }
+                .num-plus{
+                    // font-size:20px;
+                    border-radius: 50%;
+                    line-height: 20px;
+                    border:1px solid $card-backColor;
+                    width:25px;
+                    height:25px;
+                    background: $them-color;
+                    text-align: center;
+                    font-weight: bold;
+                    color:#fff;
+
+                }
+                .num-delete{
+                    border-radius: 50%;
+                    line-height: 20px;
+                    border:1px solid $them-color;
+                    width:25px;
+                    height:25px;
+                    // background: $them-color;
+                    text-align: center;
+                    font-weight: bold;
+                    color:$them-color
+                }
+            }
+        }
+    }
+    .van-button__text{
+        font-size:16px;
+    }
+}
